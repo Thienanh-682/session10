@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Lần Xuất Hiện Phần Tử</title>
+</head>
+<body>
+    <script>
+    let arr = [];
+    for (let i=0;i<100;i++) {
+        arr[i] = Math.floor(Math.random()*99);
+    }
+    console.log(arr);
+    couter();
+
+    function couter() {
+        let value = prompt("Nhập Số Cần kiểm Tra :");
+        let count1 = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (value === arr[i]) {
+                count1++;
+            }
+        }
+        console.log(count1);
+    }
+    </script>
+</body>
+</html>
